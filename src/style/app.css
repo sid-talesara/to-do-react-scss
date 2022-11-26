@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.main-div {
+  height: 100vh;
+  background-color: #1d3557;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-div .center-div {
+  background-color: #f1faee;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-height: 40rem;
+  max-width: 40rem;
+  margin: 1rem;
+  text-align: center;
+  color: #f1faee;
+  box-shadow: 2px 2px 20px 2px black;
+  overflow-y: scroll;
+  border-radius: 1rem;
+}
+.main-div .center-div::-webkit-scrollbar {
+  width: 3px;
+  height: 100%;
+  background-color: #457b9d;
+  border-radius: 1rem;
+}
+.main-div .center-div::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  background-color: red;
+}
+.main-div .center-div h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: #457b9d;
+  padding: 1rem 7rem;
+}
+.main-div .center-div input {
+  border: none;
+  border-bottom: 3px solid #457b9d;
+  background-color: transparent;
+  text-align: center;
+  outline: none;
+  font-size: 1.2rem;
+}
+.main-div .center-div button {
+  background-color: #f1faee;
+  color: #457b9d;
+  border: 2px solid #457b9d;
+  font-size: 1.4rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.main-div .center-div button:hover {
+  background-color: #457b9d;
+  color: #f1faee;
+  border: 2px solid #457b9d;
+}
+.main-div .center-div ul {
+  list-style: none;
+}
+.main-div .center-div ul li {
+  position: relative;
+  background-color: #a8dadc;
+  color: #1d3557;
+  max-width: 25rem;
+  max-height: 5rem;
+  padding: 0rem 0.5rem;
+  margin: 1rem;
+  border-radius: 0.8rem;
+  display: flex;
+  min-height: 3rem;
+  align-items: center;
+}
+.main-div .center-div ul li .btn-group {
+  position: absolute;
+  right: 0.2rem;
+}
+.main-div .center-div ul li .btn-done, .main-div .center-div ul li .btn-delete {
+  font-size: 0.6rem;
+  margin: 0.2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
+}
+.main-div .center-div ul li .btn-done:hover {
+  background-color: green;
+}
+.main-div .center-div ul li .btn-delete:hover {
+  background-color: red;
+}
+.main-div .center-div ul .done {
+  text-decoration: line-through;
+}/*# sourceMappingURL=app.css.map */

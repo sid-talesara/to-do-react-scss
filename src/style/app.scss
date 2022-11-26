@@ -1,0 +1,131 @@
+$screen-bg-color:#1d3557;
+$center-div-bg-color:#f1faee;
+$hightlight-color:#457b9d;
+$font-color-primary:#1d3557;
+$sky-blue:#a8dadc;
+// $font-color-secondary:#;
+*{
+    margin:0;
+    padding: 0;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+}
+
+.main-div{
+height: 100vh;
+background-color:$screen-bg-color;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+.center-div{
+background-color:$center-div-bg-color;
+height: fit-content;
+width: fit-content;
+max-height: 40rem;
+max-width: 40rem;
+margin: 1rem;
+text-align: center;
+color:$center-div-bg-color;
+box-shadow:2px 2px 20px 2px black ;
+overflow-y:scroll;
+border-radius: 1rem;
+&::-webkit-scrollbar{
+    // -webkit-appearance: ;
+    // scrollbar-width: ;
+    width: 3px;
+    height: 100%;
+    background-color: #457b9d;
+    border-radius: 1rem;
+    
+}
+&::-webkit-scrollbar-thumb{
+    border-radius: 16px;
+    background-color: red
+}
+
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    background-color:$hightlight-color;
+    padding: 1rem 7rem;
+}
+
+input{
+    border: none;
+    border-bottom: 3px solid $hightlight-color;
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    font-size: 1.2rem;
+
+}
+
+button{
+    background-color:$center-div-bg-color ;
+    color: $hightlight-color;
+    border: 2px solid $hightlight-color;
+    font-size: 1.4rem;
+    padding: .6rem .9rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+button:hover{
+    background-color:$hightlight-color ;
+    color: $center-div-bg-color;
+    border: 2px solid $hightlight-color;
+}
+
+ul{
+    list-style: none;
+
+    
+   li{
+    position: relative;
+        background-color:$sky-blue;
+       color: $font-color-primary;
+       max-width: 25rem;
+       max-height: 5rem;
+       padding: 0rem .5rem;
+       margin: 1rem;
+       border-radius: 0.8rem;
+       display: flex;
+       min-height: 3rem;
+       align-items: center;
+    //    justify-content:space-between;
+       
+    
+
+    .btn-group{
+        position: absolute;
+        right: 0.2rem;
+    }
+       .btn-done,.btn-delete{
+       font-size: 0.6rem;
+       margin: 0.2rem;
+    //    align-items: flex-end;
+    //    justify-content: flex-end;
+       padding: 0.3rem 0.6rem;
+       border-radius: 0.4rem;
+       }
+      
+       .btn-done:hover{
+        background-color: green;
+       }
+       .btn-delete:hover{
+        background-color: red;
+       }
+   }
+   .done{
+    text-decoration: line-through;
+   }
+}
+
+}
+
+}
