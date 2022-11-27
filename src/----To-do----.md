@@ -11,3 +11,22 @@
 
 [?] How to implement stike thing in react
 [?] how to style inline or is this good?
+
+<!-- code -->
+
+// function doneHandler(item){
+// // console.log(index);
+// // console.log(item.id);
+
+// setItems(items.map((i)=>{
+// if(i.id===items.id) {
+// return{
+// ...item, isDone:!isDone
+// }}
+// else{
+// return item;
+// }
+// }
+// ))
+// // setItems(items.filter((i)=>i.id !== setIsDone(!isDone)));
+// }

@@ -1,47 +1,16 @@
 import React, { useState } from 'react'
 
-const Todo = ({items, setItems,key,isDone, setIsDone}) => {
+const Todo = ({items, setItems}) => {
 
 
-  // function doneHandler(item){
-    // //  console.log(index);
-    // // console.log(item.id);
 
-// setItems(items.map((i)=>{
-//   if(i.id===items.id) {
-//     return{
-//       ...item, isDone:!isDone
-//     }}
-//     else{
-//   return item;
-//     } 
-// }
-// )) 
-// // setItems(items.filter((i)=>i.id !== setIsDone(!isDone)));
-// }
-
-
-// strike through the done elements
-function doneHandler(){
-  // setItems(items.map((i)=>{
-
-  //   console.log(i)
-
-  //   if(i.id===items.id){
-  //     return(
-  //       // ...i,isDone:!isDone
-  // )
-
-  //   }
-  //   return i;
-  // }))
-  setIsDone(!isDone)
+// // strike through the done elements
+function doneHandler(item){
+  setItems(items.map((i,index)=>{if(i.id===item.id){
+    console.log(i);
+  }}))
+  // setIsDone(!isDone);
 }
-
-
-
-
-
 
 // delete the to-do after clicking on delete button
 function deleteHandler(item, index){
@@ -53,14 +22,15 @@ function deleteHandler(item, index){
   return ( 
     <ul> 
     {items.map((item,index)=>{
+  
       return(
-        <li  style={{textDecoration:isDone?"line-through":"none"}} >
+        <li key={index} style={{textDecoration:item.isDone?"line-through":"none"}} >
        
         {item.todo} 
         <div className='btn-group'>
            <button 
              className="btn-done" 
-             onClick={doneHandler }
+             onClick={()=> doneHandler(item)}
               >
              Done
              </button> 
