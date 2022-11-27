@@ -5,7 +5,8 @@ import Input from './Input';
 import { v4 as uuidv4 } from 'uuid';
 
 function App() {
-// inputL
+// isDone for styling
+const[isDone, setIsDone]=useState(false);
 
 // To-do Input state
 const [textInput, setInput]= useState("");
@@ -21,7 +22,7 @@ function itemEvent(x){
 //  function to clear the input and add it to UI
 function listOfItems(){
   // updates the array
-  setItems(()=>{return [...items,{todo:textInput, id:uuidv4()}];})
+  setItems(()=>{return [...items,{todo:textInput, id:uuidv4(), isDone:isDone}];})
 // clears the input field 
   setInput("");
 };
@@ -29,6 +30,7 @@ function listOfItems(){
 
 return (
     <div className="main-div">
+      <div className="to-do-div">
     <div className="center-div">
       <br /> <h1>To-Do-List</h1>  <br />
       <Input
@@ -42,7 +44,10 @@ return (
      items={items} 
      setItems={setItems}
      key={items.id}
+     isDone={isDone}
+     setIsDone={setIsDone}
      />
+    </div>
     </div>
     </div>
   )

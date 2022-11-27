@@ -22,6 +22,11 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 
+.to-do-div{
+    border-radius: 1rem;
+    background-color: $center-div-bg-color;
+    box-shadow:2px 2px 20px 2px black ;
+}
 .center-div{
 background-color:$center-div-bg-color;
 height: fit-content;
@@ -31,21 +36,20 @@ max-width: 40rem;
 margin: 1rem;
 text-align: center;
 color:$center-div-bg-color;
-box-shadow:2px 2px 20px 2px black ;
-overflow-y:scroll;
-border-radius: 1rem;
+overflow-y:auto;
+
 &::-webkit-scrollbar{
-    // -webkit-appearance: ;
-    // scrollbar-width: ;
-    width: 3px;
-    height: 100%;
+  margin: 5rem;
+    width: 6px;
     background-color: #457b9d;
     border-radius: 1rem;
+    overflow-y: hidden;
     
 }
 &::-webkit-scrollbar-thumb{
+  
     border-radius: 16px;
-    background-color: red
+    background-color: $font-color-primary;
 }
 
 
@@ -53,7 +57,8 @@ h1{
     font-size: 2rem;
     font-weight: 700;
     background-color:$hightlight-color;
-    padding: 1rem 7rem;
+    padding: 1rem 6rem;
+    margin: 0rem 1rem;
 }
 
 input{

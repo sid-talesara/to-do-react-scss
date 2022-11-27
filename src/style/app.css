@@ -15,6 +15,11 @@
   justify-content: center;
   align-items: center;
 }
+.main-div .to-do-div {
+  border-radius: 1rem;
+  background-color: #f1faee;
+  box-shadow: 2px 2px 20px 2px black;
+}
 .main-div .center-div {
   background-color: #f1faee;
   height: -webkit-fit-content;
@@ -28,25 +33,25 @@
   margin: 1rem;
   text-align: center;
   color: #f1faee;
-  box-shadow: 2px 2px 20px 2px black;
-  overflow-y: scroll;
-  border-radius: 1rem;
+  overflow-y: auto;
 }
 .main-div .center-div::-webkit-scrollbar {
-  width: 3px;
-  height: 100%;
+  margin: 5rem;
+  width: 6px;
   background-color: #457b9d;
   border-radius: 1rem;
+  overflow-y: hidden;
 }
 .main-div .center-div::-webkit-scrollbar-thumb {
   border-radius: 16px;
-  background-color: red;
+  background-color: #1d3557;
 }
 .main-div .center-div h1 {
   font-size: 2rem;
   font-weight: 700;
   background-color: #457b9d;
-  padding: 1rem 7rem;
+  padding: 1rem 6rem;
+  margin: 0rem 1rem;
 }
 .main-div .center-div input {
   border: none;
